@@ -91,7 +91,7 @@ function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push('/commande')}
+                  onClick={() => router.push('connexion?redirect=/commande')}
                   className="primary-button w-full"
                 >
                   Valider
