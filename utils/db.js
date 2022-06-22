@@ -10,7 +10,7 @@ async function connect() {
   if (mongoose.connections.length > 0) {
     connexion.isConnected = mongoose.connections[0].readyState;
     if (connexion.isConnected === 1) {
-      console.log('utiliser la connexion précédente');
+      console.log('utiliser la dernière connexion');
       return;
     }
     await mongoose.disconnect();
