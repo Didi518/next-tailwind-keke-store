@@ -76,7 +76,7 @@ function OrderScreen() {
               {isDelivered ? (
                 <div className="alert-success">Livrée le {deliveredAt}</div>
               ) : (
-                <div className="alert-error">Non livrée</div>
+                <div className="alert-error">Non Livrée</div>
               )}
             </div>
 
@@ -141,7 +141,7 @@ function OrderScreen() {
                 </li>{' '}
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Taxes</div>
+                    <div>TVA</div>
                     <div>{taxPrice}€</div>
                   </div>
                 </li>

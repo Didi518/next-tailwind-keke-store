@@ -22,7 +22,7 @@ export default function PlaceOrderScreen() {
   ); //123,456 => 123,46
 
   const shippingPrice = itemsPrice > 200 ? 0 : 15;
-  const taxPrice = round2(itemsPrice * 0.15);
+  const taxPrice = round2(itemsPrice * 0.206);
   const totalPrice = round2(itemsPrice + shippingPrice + taxPrice);
 
   const router = useRouter();
@@ -143,7 +143,7 @@ export default function PlaceOrderScreen() {
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Taxes</div>
+                    <div>TVA</div>
                     <div>{taxPrice}</div>
                   </div>
                 </li>
